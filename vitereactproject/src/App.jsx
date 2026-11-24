@@ -16,13 +16,35 @@ function App() {
   }  
   return (
     <>
-      <h1>Counter Example</h1>
+      {/* <h1>Counter Example</h1>
       <h2>Number Value: {counter}</h2>
       <button onClick={valueAdd}>Add Value {counter}</button>
       <br/>
       <br/>
       <button onClick={valueRemove}>Remove Value {counter} </button>
-      <p>Foorter: {counter}</p>
+      <p>Foorter: {counter}</p> */}
+
+      <div className="counter-container">
+        <h1 className="counter-title">Counter Example</h1>
+
+        <h2 className="counter-value">
+          Number Value: <span>{counter}</span>
+        </h2>
+
+        <div className="counter-actions">
+          <button className="counter-btn counter-btn--add" onClick={valueAdd}>
+            Add Value {counter}
+          </button>
+
+          <button className="counter-btn counter-btn--remove" onClick={valueRemove}>
+            Remove Value {counter}
+          </button>
+        </div>
+
+        <footer className="counter-footer">
+          Footer: {counter}
+        </footer>
+      </div>
     </>
   )
 }
