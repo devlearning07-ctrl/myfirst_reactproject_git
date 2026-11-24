@@ -19,6 +19,8 @@ function App() {
       <h1>Counter Example</h1>
       <h2>Number Value: {counter}</h2>
       <button onClick={valueAdd}>Add Value {counter}</button>
+      <br/>
+      <br/>
       <br/> 
       <button onClick={valueRemove}>Remove Value {counter} </button>
       <p>Foorter: {counter}</p>
