@@ -33,7 +33,7 @@ function App() {
 
         <div className="counter-actions">
           <button className="counter-btn counter-btn--add" onClick={valueAdd}>
-            Add Value {counter}
+            Add Values {counter}
           </button>
 
           <button className="counter-btn counter-btn--remove" onClick={valueRemove}>
